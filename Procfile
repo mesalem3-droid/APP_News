@@ -1,0 +1,1 @@
+web: celery -A tasks.celery_app worker --loglevel=info -P solo & gunicorn app:app
